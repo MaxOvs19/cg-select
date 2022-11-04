@@ -243,9 +243,41 @@ export class DropDown {
     });
   }
 
-  // on(select, callback) {
-  //   console.log('aa');
-  // }
+  /*
+    open
+    close
+    select
+    clear
+    deliteItem
+  */
+  on(event, collback) {
+    const select = event;
+
+    switch (select) {
+      case 'open':
+        console.log(this.#list.classList.contains('open'));
+        console.log(select);
+
+        break;
+      case 'close':
+        console.log(select);
+        break;
+      case 'select':
+        console.log(select);
+        break;
+      case 'clear':
+        console.log(select);
+        break;
+      case 'deliteItem':
+        console.log(select);
+        break;
+
+      default:
+        break;
+    }
+
+    collback();
+  }
 
   /**
    * Приватный метод инициализации экземпляра класса DropDown

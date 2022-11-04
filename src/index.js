@@ -30,7 +30,9 @@ const dropdown = new DropDown({
   // multiselect: true,
   // multiselectTag: true,
 });
-
+dropdown.on('open', function (e) {
+  console.log('Hello World');
+});
 // ------------------------------URL--------------------
 const dropdown3 = new DropDown({
   selector: '.cg-dropdown_three',
